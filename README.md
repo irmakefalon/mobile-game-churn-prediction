@@ -1,8 +1,8 @@
-# 🎮 Early Churn Prediction in Mobile Gaming
+# Early Churn Prediction in Mobile Gaming
 
-## 📊 Problem
+##  Problem
 
-Predict which users will churn in a mobile game using only **early behavioral data (first 3 days after registration)**.
+Predicting 7-day churn from a user’s **first 72 hours of in-game** behavior.
 
 Churn definition:
 
@@ -10,7 +10,7 @@ Churn definition:
 
 ---
 
-## 📁 Dataset
+##  Dataset
 
 * User registration timestamps
 * User login/activity logs
@@ -19,7 +19,7 @@ Churn definition:
 
 ---
 
-## ⚙️ Feature Engineering
+##  Feature Engineering
 
 To avoid data leakage, only early user behavior was used.
 
@@ -32,7 +32,7 @@ To avoid data leakage, only early user behavior was used.
 
 ---
 
-## 🧠 Modeling Approach
+##  Modeling Approach
 
 * Time-based train/test split
 * Baseline: Logistic Regression
@@ -44,7 +44,7 @@ To avoid data leakage, only early user behavior was used.
 
 ---
 
-## 📈 Results
+##  Results
 
 | Model               | ROC AUC  |
 | ------------------- | -------- |
@@ -57,7 +57,7 @@ To avoid data leakage, only early user behavior was used.
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
 * Early engagement is the strongest predictor of retention
 * Users with multiple sessions in the first 3 days are significantly less likely to churn
@@ -65,7 +65,7 @@ To avoid data leakage, only early user behavior was used.
 
 ---
 
-## 💡 Business Impact
+##  Business Impact
 
 * Identify at-risk users within first 3 days
 * Trigger retention campaigns (notifications, rewards)
@@ -73,7 +73,7 @@ To avoid data leakage, only early user behavior was used.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * Python
 * Pandas
@@ -81,7 +81,7 @@ To avoid data leakage, only early user behavior was used.
 
 ---
 
-## 📌 Key Learnings
+##  Key Learnings
 
 * Importance of avoiding data leakage
 * Time-based validation in user behavior modeling
@@ -89,7 +89,7 @@ To avoid data leakage, only early user behavior was used.
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 * Add temporal features (session intervals, trends)
 * Try gradient boosting models (XGBoost, LightGBM)
